@@ -49,3 +49,14 @@ body{background:radial-gradient(ellipse at 78% 4%,rgba(27,79,133,.22),transparen
 body.modal-open{overflow:hidden}
 @media(max-width:600px){.project-visual-real{padding:16px;min-height:250px}.project-preview-trigger{min-height:220px}.dashboard-modal{padding:10px}.dashboard-modal-panel{padding:17px;max-height:94vh}.dashboard-modal-actions{gap:8px}.dashboard-modal-actions .button{padding:12px;font-size:10px}}
 @media(hover:none){.preview-overlay{opacity:1}.preview-overlay>span{transform:none}}
+
+/* Motocard project cover + three-image gallery */
+.gallery-viewer{display:grid;grid-template-columns:42px minmax(0,1fr) 42px;align-items:center;gap:10px}
+.gallery-viewer .dashboard-image-link{min-width:0}
+.gallery-arrow{height:48px;width:42px;border:1px solid rgba(215,168,75,.45);background:#172c47;color:#f0d79b;font-size:30px;cursor:pointer;transition:background .2s ease,transform .2s ease}
+.gallery-arrow:hover{background:#d7a84b;color:#10213a;transform:scale(1.05)}
+.gallery-caption{display:flex;align-items:center;justify-content:space-between;margin-top:13px;color:#e7c77f;font:600 9px var(--display);letter-spacing:1.5px}
+.gallery-dots{display:flex;gap:8px}
+.gallery-dots button{width:8px;height:8px;border-radius:50%;padding:0;border:1px solid #d7a84b;background:transparent;cursor:pointer}
+.gallery-dots button.active{background:#d7a84b;box-shadow:0 0 10px rgba(215,168,75,.55)}
+@media(max-width:600px){.gallery-viewer{grid-template-columns:30px minmax(0,1fr) 30px;gap:6px}.gallery-arrow{width:30px;height:40px;font-size:24px}.gallery-caption{font-size:8px}}
