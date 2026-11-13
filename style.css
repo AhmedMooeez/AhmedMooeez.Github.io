@@ -60,3 +60,16 @@ body.modal-open{overflow:hidden}
 .gallery-dots button{width:8px;height:8px;border-radius:50%;padding:0;border:1px solid #d7a84b;background:transparent;cursor:pointer}
 .gallery-dots button.active{background:#d7a84b;box-shadow:0 0 10px rgba(215,168,75,.55)}
 @media(max-width:600px){.gallery-viewer{grid-template-columns:30px minmax(0,1fr) 30px;gap:6px}.gallery-arrow{width:30px;height:40px;font-size:24px}.gallery-caption{font-size:8px}}
+
+/* Centered hero layout after removing the visual panel */
+.hero-copy{
+  width:100%;
+  max-width:780px;
+  margin-inline:auto;
+  text-align:center;
+}
+.hero-kicker{margin-top:30px}
+.hero-intro{margin-left:auto;margin-right:auto}
+.hero-actions{justify-content:center}
+.hero-meta{justify-content:center}
+.scroll-cue{left:50%;transform:translateX(-50%)}
